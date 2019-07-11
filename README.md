@@ -84,11 +84,11 @@
     
     * **Windows**, run:
     cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd -buildmode=-buildmode=c-archive --targets=windows/*  ./
+    xgo -out liblnd -buildmode=c-archive --targets=windows/*  ./
     
     * **Linux**, run:
     cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd -buildmode=-buildmode=c-archive --targets=linux/*  ./
+    xgo -out liblnd -buildmode=c-archive --targets=linux/*  ./
     
     
     * **Android**, run:

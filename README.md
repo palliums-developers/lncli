@@ -1,4 +1,4 @@
-##lncli is library for lnd to build liblnd
+## lncli is library for lnd to build liblnd
 
 ### Preliminaries
   In order to build liblnd, the

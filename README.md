@@ -72,7 +72,7 @@
 	git clone https://github.com/palliums-developers/lncli.git
 	mv lncli/api.go cmd/lnd/
 	mv lncli/api_config.go ./
-	sed -i '/host, err := os.Hostname/{N;N;N;s/.*/\thost := "localhost"/}' lnd.go
+	sed -i '/host, err := os.Hostname/{N;N;N;N;N;s/.*/\thost := "localhost"/}' lnd.go
 	
 
 ### Cross compiling liblnd

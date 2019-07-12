@@ -80,21 +80,21 @@
     Depending on which platform you're targeting, compile using xgo:
     * **Mac**, run:
     cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd -buildmode=c-archive --targets=darwin-10.11/*  ./
+    xgo -out liblnd -buildmode=c-archive -tags="experimental autopilotrpc" --targets=darwin-10.11/*  ./
     
     * **Windows**, run:
     cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd -buildmode=c-archive --targets=windows/*  ./
+    xgo -out liblnd -buildmode=c-archive -tags="experimental autopilotrpc" --targets=windows/*  ./
     
     * **Linux**, run:
     cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd -buildmode=c-archive --targets=linux/*  ./
+    xgo -out liblnd -buildmode=c-archive -tags="experimental autopilotrpc" --targets=linux/*  ./
     
     
     * **Android**, run:
     ```
 	cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd_export --targets=android/aar  ./
+    xgo -tags="experimental autopilotrpc" -out liblnd_export --targets=android/aar  ./
     ```
     This will produce an **liblnd_export-android-16.aar** file and you need to copy it
     to the app's directory.
@@ -102,7 +102,7 @@
     * **iOS**, run:
     ```
 	cd $GOPATH/src/github.com/lightningnetwork/liblnd/cmd/lnd
-    xgo -out liblnd_export --targets=ios/framework ./
+    xgo -tags="experimental autopilotrpc" -out liblnd_export --targets=ios/framework ./
     ```
     This will produce a **liblnd_export-ios-5.0-framework/Liblnd_export.framework/** folder
     and you need to copy it to the app's directory.
